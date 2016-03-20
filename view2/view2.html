@@ -1,0 +1,71 @@
+<link href="popup.css" rel="stylesheet">
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#start">
+                  <img src = "./landing-images/logo.png" height="70" width="70"/>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    
+                    <li>
+                        <div id="google_translate_element" style="margin-top:13px;margin-left:13px;"></div>
+                        <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,bn,gu,hi,kn,mr,ta,te,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                        }
+                        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Heat Map <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#" ng-click="air_moisture()" id="air_moist">Air Moisture</a></li>
+                            <li><a href="#" ng-click="temperature()" id="temp">Temperature</a></li>
+                            <li><a href="#" ng-click="soil_moisture()" id="soil_moist">Soil Moisture</a></li>
+                            <li><a href="#" ng-click="ph()" id="ph">PH</a></li>
+                            <li><a href="#" ng-click="ec()" id="ec">Soil Conductivity</a></li>
+                        </ul>
+                      </li>
+
+
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/analytics">Analytics</a></li>
+                    <li class="active"><a href="/map">Map <span class="sr-only">(current)</span></a></li>
+                    <li><a href="/scheduler">Scheduler</a></li>
+                    <li><a href="/inventory">Inventory</a></li>
+                    <li><a id="signout"href="#">Signout</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+<center><div class="container" style="position:absolute;height:80%;width:100%;margin-top:30px;padding:0px">
+    <div id="map-canvas"></div>
+
+    </div>
+</center>    
+
+<script src="popup.js"></script>
